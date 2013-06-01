@@ -7,7 +7,8 @@ def self.find(actor)
 end
 
 def calculate 
-	@total_score = 0
+	@scorer = GithubScorer.new(data)
+	@total_score = @scorer.score.total_score
 	self
 end
 

@@ -1,3 +1,4 @@
+require_relative '../../lib/github' 
 class User
 attr_reader :actor
 attr_reader :total_score
@@ -7,8 +8,7 @@ def self.find(actor)
 end
 
 def calculate 
-	@scorer = GithubScorer.new(data)
-	@total_score = @scorer.score.total_score
+	@total_score = scorer.total_score 
 	self
 end
 
@@ -17,4 +17,11 @@ private
 def initialize(actor)
 	@actor = actor
 end
+def scorer 
+	unless @scorer 
+		data = Github::Event.new(@username).get 
+		@scorer = GithubScorer.new(data).score 
+	end 
+		@scorer 
+	end 
 end

@@ -7,11 +7,13 @@ class GithubScorer
   end
 
   def score
-    @total_score = 9000
+    @total_score = 0
     @events.each do |event|
       @total_score += case event
 
-        when 'stuff' then 3
+        when 'CreateEvent' then 10
+        when 'PushEvent' then 20
+        when 'WatchEvent' then 1
         else 0
       end
     end

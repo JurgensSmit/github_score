@@ -10,19 +10,17 @@ class GithubScorer
     @total_score = 0
     @events.each do |event|
       @total_score += case event
-
-        when 'CreateEvent' then 10
-        when 'PushEvent' then 20
+        when 'CreateEvent' then 5
+        when 'PushEvent' then 15
         when 'WatchEvent' then 1
         else 0
       end
     end
 
-    self
+  self
   end
 
   private
-
   def parse
     @events = []
     @data.each do |event|

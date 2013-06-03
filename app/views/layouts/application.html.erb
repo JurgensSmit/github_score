@@ -12,13 +12,11 @@
   <body class="<%= controller_name %> <%= action_name %>">
     <div id="container" class="container">
       <header>
-        <%= render 'layouts/navigation' %>
         <%= render 'layouts/messages' %>
       </header>
       <div id="main" role="main">
         <%= yield %>
       </div>
-<%= render 'layouts/footer' %>
     </div> <!--! end of #container -->
   </body>
 </html>

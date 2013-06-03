@@ -3,10 +3,9 @@ require_relative '../../lib/github'
 class User
   attr_reader :username
   attr_reader :total_score
-
   def self.find(username)
-    User.new(username)
-  end
+  User.new(username)
+end
 
   def calculate
     @total_score = scorer.total_score
@@ -14,7 +13,6 @@ class User
   end
 
   private
-
   def initialize(username)
     @username = username
   end

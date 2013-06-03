@@ -1,15 +1,19 @@
 body 
 { 
-	background: #001118 url(bg.jpg) fixed 0 -500px no-repeat;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	text-shadow: 0 0 1px rgba(0,0,0,0.01);
-	color: rgba(255,255,255,0.5);
+  background: #001118 url(bg.jpg) fixed 0 -500px no-repeat;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-shadow: 0 0 1px rgba(0,0,0,0.01);
+  color: rgba(255,255,255,0.5);
   padding: 150px;
 }
 
-p.more-about {
-  margin-top: 18px; }
-p.more-about a {
+p.more-about
+{
+  margin-top: 18px; 
+}
+
+p.more-about a
+{
   color: #b5b2a7;
   padding: 0;
   padding-top: 1px;
@@ -20,33 +24,33 @@ p.more-about a {
   position: relative;
   float: none;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-    opacity: 0.6;
-  }
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
 
-p.more-about a:hover {
+p.more-about a:hover 
+{
   color: #9f9b8d;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-    }
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
 
-    p.lead { font-size: 20px; line-height: 30px; 
-     text-shadow: 0.1em 0.1em 0.2em black; 
-text-rendering: optimizelegibility;
-
-
-   }
+p.lead 
+{ 
+  font-size: 20px; line-height: 30px; 
+  text-shadow: 0.1em 0.1em 0.2em black; 
+  text-rendering: optimizelegibility;
+}
 
 h1
 {
   font-size: 80px;
   font-variant: small-caps;
-    color: #D8D8D8;
-    font-size: 110px;
-    line-height: 52px;
-    margin-bottom: 55px;
-    text-shadow: 0.1em 0.1em 0.2em black;
-    text-align: left;
-  
+  color: #D8D8D8;
+  font-size: 110px;
+  line-height: 52px;
+  margin-bottom: 55px;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  text-align: left;
 }

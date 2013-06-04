@@ -15,4 +15,13 @@
 //= require foundation
 //= require_tree .
 
+$(document).ready(function(){
+$(".productDescription").hide();
+$(".show_hide").show();
+$('.show_hide').click(function(){
+$(".productDescription").slideToggle();
+return false;
+});
+});
+
 $(function(){ $(document).foundation(); });

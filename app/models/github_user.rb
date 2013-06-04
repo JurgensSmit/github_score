@@ -1,5 +1,6 @@
 class GithubUser
   attr_reader :avatar_url
+  attr_reader :total_score
 
   def initialize(username, data)
     @data = data

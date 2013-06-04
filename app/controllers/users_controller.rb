@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   def create
-    @total_score = User.find(params[:username]).calculate.total_score
+    user = User.find(params[:username])
+    @total_score = user.calculate.total_score
+    @avatar_url = user.avatar_url
     render :new
   end
 end

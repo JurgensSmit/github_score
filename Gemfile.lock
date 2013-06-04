@@ -100,6 +100,7 @@ GEM
     mime-types (1.23)
     multi_json (1.7.4)
     multi_xml (0.5.3)
+    newrelic_rpm (3.6.2.96)
     nokogiri (1.5.9-x86-mingw32)
     pg (0.15.1-x86-mingw32)
     polyglot (0.3.3)
@@ -187,6 +188,7 @@ DEPENDENCIES
   httparty
   hub (>= 1.10.2)
   jquery-rails
+  newrelic_rpm
   pg
   quiet_assets (>= 1.0.2)
   rails (= 3.2.13)

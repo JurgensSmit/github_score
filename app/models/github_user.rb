@@ -14,6 +14,9 @@ class GithubUser
       if event['actor'] == username
         gravatar = event['actor_attributes']['gravatar_id']
         @avatar_url = "http://gravatar.com/avatar/#{gravatar}"
+
+
+
       end
       break
     end

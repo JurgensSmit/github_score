@@ -5,4 +5,6 @@ class UsersController < ApplicationController
     @avatar_url = user.avatar_url
     render :new
   end
+
+
 end

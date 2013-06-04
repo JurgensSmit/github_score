@@ -9,17 +9,15 @@
     </p>
   <br>
   <br>
-  <form  action="/users" method="post" >
-    <div class="large-12 columns">
-      <div class="row collapse">
-        <div class="large-10 columns">
-            <input id='username' name='username' placeholder="Enter your username." type='text'>
-        </div>
-      <div class="large-2 columns">
-        <button class='button expand postfix' type='submit'>Calculate!</button>
-      </div>
-    </div>
-  </form>
+
+<%= form_tag users_path do |f| %>
+  <%= label_tag :username, 'Username' %>:
+  <%= text_field_tag :username %><br />
+<%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+  <i class="icon-ok icon-white"></i> Save
+  <% end %>
+  <% end %>
+
 
 <p class="more-about">
   ​<a href="#" class="show_hide">Would you like to know more?</a>

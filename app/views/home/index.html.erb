@@ -9,10 +9,13 @@
     </p>
   <br>
 
+<div id="update-container">
+</div>
+
 <div class="large-12 columns">
   <div class="row collapse">
     <div class="large-10 columns">
-      <%= form_tag users_path do |f| %>
+      <%= form_tag users_path, :remote => true,:'data-update-target' => 'update-container' do |f| %>
       <%= text_field_tag  :username, nil, :placeholder => 'Enter your Github username..', :autofocus=>true%>
       </div>
         <div class="large-2 columns">
@@ -20,7 +23,7 @@
             <i class="icon-ok icon-white"></i> Calculate
           <% end %>
         <% end %>
-        </div>
+      </div>
 </div>
 
 <p class="more-about">

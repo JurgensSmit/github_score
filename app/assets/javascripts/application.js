@@ -14,21 +14,22 @@
 //= require jquery_ujs
 //= require foundation
 //= require_tree .
-
-$(document).ready(function(){
-$(".productDescription").hide();
-$(".show_hide").show();
-$('.show_hide').click(function(){
-$(".productDescription").slideToggle();
-return false;
-});
-});
-
-$(function(){ $(document).foundation(); });
-
 $(function() {
 $('form[data-update-target]').on('ajax:success', function(evt, data) {
 var target = $(this).data('update-target');
 $('#' + target).html(data);
 });
 });
+
+function toggle() {
+  var ele = document.getElementById("toggleText");
+  var text = document.getElementById("displayText");
+  if(ele.style.display == "block") {
+        ele.style.display = "none";
+    text.innerHTML = "show";
+    }
+  else {
+    ele.style.display = "block";
+    text.innerHTML = "hide";
+  }
+} 

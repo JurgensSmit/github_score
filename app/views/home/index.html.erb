@@ -8,24 +8,23 @@
     <p class="lead">Calculate and compare your Github score, using the Github API. Your score is based on your activity. Get busy!
     </p>
   <br>
-
 <div id="update-container">
 </div>
-
+<br>
 <div class="large-12 columns">
   <div class="row collapse">
     <div class="large-10 columns">
       <%= form_tag users_path, :remote => true,:'data-update-target' => 'update-container' do |f| %>
       <%= text_field_tag  :username, nil, :placeholder => 'Enter your Github username..', :autofocus=>true%>
-      </div>
-        <div class="large-2 columns">
-            <%= button_tag(type: 'submit', class: "button expand postfix") do %>
-            <i class="icon-ok icon-white"></i> Calculate
-          <% end %>
-        <% end %>
-      </div>
+    </div>
+    <div class="large-2 columns">
+      <%= button_tag(type: 'submit', class: "button expand postfix") do %>
+      <i class="icon-ok icon-white"></i> Calculate
+      <% end %>
+      <% end %>
+    </div>
+  </div>
 </div>
-
 <p class="more-about">
   ​<a href="#" class="show_hide">Would you like to know more?</a>
   <div class="productDescription">

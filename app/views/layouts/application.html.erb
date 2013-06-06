@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Github Score" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Github Score" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "Smithub" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Smithub" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -11,12 +11,9 @@
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
     <div id="container" class="container">
-      <header>
-        <%= render 'layouts/messages' %>
-      </header>
       <div id="main" role="main">
         <%= yield %>
       </div>
-    </div> <!--! end of #container -->
+    </div>
   </body>
 </html>

@@ -7,7 +7,6 @@ class User
     @username = username
   end
 
-
   def self.find(username)
     User.new(username)
   end

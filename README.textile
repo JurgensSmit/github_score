@@ -1,5 +1,10 @@
-h1. Github Score
+h1. Smithub
 
+Smithub was created using the Github API to generate a score based on the events feed.
+
++1 For every watched repository
++10 Each created repository, branch, or tag.
++15 Any git push to a Repository.
 
 
 h2. Ruby on Rails
@@ -9,10 +14,6 @@ This application requires:
 * Ruby version 1.9.3
 * Rails version 3.2.13
 
-
-h2. Database
-
-This application uses SQLite with ActiveRecord.
 
 h2. Development
 

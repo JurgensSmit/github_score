@@ -23,4 +23,24 @@ class User
     @avatar_url ||= github_user.avatar_url
   end
 
+  def language
+    @language ||= github_user.language
+  end
+
+  def name
+    @name ||= github_user.name
+  end
+
+def project_name
+  @project_name ||= github_user.project_name
+end
+
+def project_date
+  @project_date ||= github_user.project_date
+end
+
+def project_url
+  @project_url ||= github_user.project_url
+end
+
 end

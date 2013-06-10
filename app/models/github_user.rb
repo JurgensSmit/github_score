@@ -17,12 +17,12 @@ class GithubUser
     @gravatar = event['actor_attributes']['gravatar_id']
     @avatar_url = "http://gravatar.com/avatar/#{@gravatar}"
     @name = event['actor_attributes']['name']
-    @language ||= event['repository']['language']
+    @language = event['repository']['language']
     @project_name = event['repository']['name']
     @project_url = event['repository']['url']
-    @project_date= event['repository']['pushed_at']
-      end
-      break
+    @project_date = event['repository']['pushed_at'] 
+     end
+     break
     end
   end
 
@@ -37,5 +37,4 @@ class GithubUser
       @data = Github::Event.new(username).get
     end
   end
-
 end

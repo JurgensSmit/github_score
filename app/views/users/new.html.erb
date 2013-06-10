@@ -1,16 +1,12 @@
-	<div class='score'>
-		Hi <%= @name%>, <br> you have <strong><%= @total_score.total_score %> Smits</strong>!
-		</br>
-		<br>
-			<%= link_to image_tag @avatar_url %> 
-			</br>
-			<br>
-			<% if not @language.blank? %>
-You're an expert <strong><%= @language%></strong> developer. Your last open source project was <a href="<%= @project_url%>" target="_blank"><%= @project_name%></a> and your last commit was at <strong><%= @project_date.chomp[0..-16]%></strong>.
-
-<% end %>
-
-
-
-
-	</div>
+<div class='score'>
+	Hi <%= @name%>, <br> you have <strong><%= @total_score.total_score %> Smits</strong>!
+	</br>
+	<br>
+		<%= link_to image_tag @avatar_url %> 
+	<br>
+	</br>
+	You're an expert <strong><%= @language%></strong> developer. 
+	Your last open source project was <a href="<%= @project_url%>"
+	 target="_blank"><%= @project_name%></a> 
+	and your last commit was at <strong><%= @project_date.chomp[0..-16]%></strong>.
+</div>
